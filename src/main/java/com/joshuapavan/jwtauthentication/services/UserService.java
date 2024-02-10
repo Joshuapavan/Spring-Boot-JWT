@@ -1,6 +1,7 @@
 package com.joshuapavan.jwtauthentication.services;
 
 import com.joshuapavan.jwtauthentication.entities.User;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.stereotype.Service;
 
@@ -12,5 +13,5 @@ public interface UserService {
 
     User createUser(User user);
 
-    UserDetailsService userDetailsService();
+    UserDetailsService userDetailService();
 }
